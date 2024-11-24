@@ -9,8 +9,6 @@ The solution integrates raw data from motion sensors embedded in the STEDI Step 
 - **Data Curation**: Aggregate and integrate data for machine learning and analytics.
 - **Machine Learning Enablement**: Create high-quality datasets to train models for accurate real-time step detection.
 
----
-
 ## Project Details: The STEDI Step Trainer
 The STEDI Step Trainer combines innovative hardware and software:
 - **Balance Training**: Helps users perform balance exercises.
@@ -18,8 +16,6 @@ The STEDI Step Trainer combines innovative hardware and software:
 - **Mobile Application**: Utilizes accelerometer data (X, Y, Z directions) to detect motion.
 
 Privacy considerations drive the data pipeline design, ensuring that only data from customers who have consented to research is processed.
-
----
 
 ## Data Engineering Workflow
 
@@ -43,8 +39,6 @@ Screenshots of sample queries executed in Athena:
 - **Step Trainer Landing Table**:  
   ![Step Trainer Landing](./images/step_trainer_landing.png)
 
----
-
 ### 2. Trusted Zone
 Data in the trusted zone is processed to ensure privacy compliance and enhanced quality for analytical purposes.
 
@@ -65,8 +59,6 @@ Screenshots of trusted zone tables:
 - **Step Trainer Trusted Table**:  
   ![Step Trainer Trusted](./images/step_trainer_trusted.png)
 
----
-
 ### 3. Curated Zone
 The curated zone contains aggregated and integrated data ready for advanced analytics and machine learning.
 
@@ -83,8 +75,6 @@ Screenshots of curated zone tables:
 - **Machine Learning Curated Table**:  
   ![Machine Learning Curated](./images/machine_learning_curated.png)
 
----
-
 ## Technical Highlights
 - **AWS Glue Jobs**:
   - Built Glue jobs for data sanitization, transformation, and aggregation.
@@ -94,8 +84,6 @@ Screenshots of curated zone tables:
   - Ensured table row counts aligned with expected outputs.
 - **Privacy Compliance**:
   - Processed only consented customer data throughout the pipeline.
-
----
 
 ## Verification Checklist
 ### Table Row Counts:
